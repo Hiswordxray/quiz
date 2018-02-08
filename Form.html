@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Campaign</title>
+<style type="text/css">
+header {text-align :center ;
+
+}
+
+body {margin :20px auto;
+}
+
+h1 {background :#3399ff;
+    color :#9999;
+}
+
+
+
+
+.submit {text-align :center ;
+       
+        }
+
+.ins {display :none;
+}
+
+
+.spon {text-align :center ;
+       padding :10%;
+}
+.img {background :blue;
+
+}
+.disabled {cursor: not-allowed;
+        pointer-events: none;
+        color: #c0c0c0;
+        background-color: #ffffff;
+}
+
+.none {display :none;
+}
+
+
+
+fieldset {border :20px insert #ff0000;
+          border-radius :15px ;
+          left :50%;
+          top :50%;
+}
+
+.enter {float :right;
+}
+
+.remain {float:right;
+         margin :10px;
+         cursor: not-allowed;
+         pointer-events: none;
+         color: #c0c0c0;
+}
+
+.call1gb {float:right;
+         margin :10px;
+         cursor: not-allowed;
+         pointer-events: none;
+         color: #c0c0c0;
+}
+
+.call2gb {float:right;
+         margin :10px;
+         cursor: not-allowed;
+         pointer-events: none;
+         color: #c0c0c0;
+}
+
+
+.question {display :none;
+}
+
+.all {border :20px #3399ff;
+      border-radius :15px;
+      with :60%;
+      height :60%;
+}
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+<header >
+<h1>Free Stuff Campaign</h1>
+</header>
+
+
+<div class ="all" Id ="lot">
+<div class ="spon" data-action ="like">
+<!-- Sponsores Facebook page-->
+<img src="https://1.bp.blogspot.com/-76hG5uj3sqA/WFw9QIvoAmI/AAAAAAAAAnU/pqFs2kmXQ4Y7EqfIZCpp1PjwXbKDJQszwCLcB/s320/PicsArt_11-19-11.44.36.png" width ="100" height ="100"><br>
+
+<a Id ="like" onclick ="disabled()" href="#" >
+<img src="https://www.dinheirovivo.pt/wp-content/uploads/2015/10/ng3092495.jpg" width ="60" height ="20"></a>
+</div>
+ 
+
+<!-- User Details-->
+
+<p>Name:   <input type= "text " placeholder ="first name"></p>
+
+<p>Email:  <input type ="text" placeholder ="example@gmail.com"> </p>
+
+
+
+
+<!-- Questions -->
+<div >
+
+Answer this quiz and win <strong>free</strong> data<br>
+<strong >What goes up when rain comes down</strong></li> <br>
+<form action="#" method="post" class="demoForm" id="demoForm">
+<label><input type="radio" name="myCheck"  value ="vap" > Vapor</label> <br>
+<label><input type ="radio" name="myCheck" value ="res" > Respiration </label><br>
+<label><input type ="radio" name="myCheck" value ="umb" Id ="correct"> Umbrella</label> <br>
+
+
+
+  
+
+
+
+
+<!--Submit Button and hidden Next Button --> 
+<div class ="submit">
+<button class ="disabled" onclick ="randomize()" Id ="submit" type ="button"><b>Submit</b> </button><br>
+</div>
+</div>
+
+</form>
+</div>
+
+
+<form class ="question" Id="qut1" onclick ="go()">
+<b>“The attorney is my brother,” testified the accountant. But the attorney testified he did not have a brother. Who is lying?</b><br>
+<label><input type="radio" name=""  value ="" >The attorney</label> <br>
+<label><input class ="" type ="radio" name="" value ="" Id ="cor1" >None of them </label><br>
+<label><input type ="radio" name="" value ="" >The accountant</label> <br>
+<label><input type ="radio" name="" value ="" >Both of them</label> <br>
+<button onclick ="randomize()" class ="subgone" name ="" Id ="sub1">Submit </button>
+</form>
+
+
+
+
+<form class="question" Id ="qut2">
+<b>Some months have 31 days, others have 30 days, but how many have 28 days?</b><br>
+<label><input class ="" type="radio" name=""  value ="" Id ="cor2">All</label> <br>
+<label><input type ="radio" name="" value ="" >3</label><br>
+<label><input type ="radio" name="" value ="" >1</label> <br>
+<label><input type ="radio" name="" value ="" >None</label> <br>
+<button onclick ="randomize()" class ="subgone" name ="" Id ="sub2">Submit </button>
+</form>
+
+<form class="question" Id ="qut3">
+<b>How was it possible that every single person in an airplane crash died, but two people survived?</b><br>
+<label><input type="radio" name=""  value ="" >The two can fly</label> <br>
+<label><input type ="radio" name="" value ="" >The two had parachute</label><br>
+<label><input type ="radio" name="" value ="" Id ="cor3">The two are married</label> <br>
+<label><input type ="radio" name="" value ="" >The two left never entered the plane</label> <br>
+<button onclick ="randomize()" class ="subgone" name ="" Id ="sub3">Submit </button>
+</form>
+
+
+<form  class="question" Id ="qut4">
+<b>How did the boy kick his soccer ball ten feet, and then have it come back to him on its own?</b><br>
+<label><input type="radio" name=""  value ="" >His dog brought it back</label> <br>
+<label><input type ="radio" name="" value ="" >He never kicked it</label><br>
+<label><input type ="radio" name="" value ="" Id ="cor4">He kicked it up</label> <br>
+<label><input type ="radio" name="" value ="" >He kicked it against a wall</label> <br>
+<button onclick ="randomize()" class ="subgone" name ="" Id ="sub4">Submit </button>
+</form>
+
+
+<form  class="question" Id ="qut5">
+<b>If an electric train is moving north at 100mph and a wind is blowing to the west at 10mph, which way does the smoke blow?</b><br>
+<label><input type="radio" name=""  value ="" >anywhere</label> <br>
+<label><input type ="radio" name="" value ="" >east</label><br>
+<label><input type ="radio" name="" value ="" >west</label> <br>
+<label><input type ="radio" name="" value ="" Id ="cor5">nowhere</label> <br>
+<button onclick ="randomize()" class ="subgone" name ="" Id ="sub5">Submit </button>
+</form>
+
+<form class="question" Id ="qut6">
+<b>What gets wetter & wetter the more it dries?</b><br>
+<label><input type="radio" name=""  value ="" Id ="cor6">towel</label> <br>
+<label><input type ="radio" name="" value ="" >waterfall</label><br>
+<label><input type ="radio" name="" value ="" >rain</label> <br>
+<label><input type ="radio" name="" value ="" >sponge</label> <br>
+<button onclick ="randomize()" class ="subgone" name ="" Id ="sub6">Submit </button>
+</form>
+
+<form  class="question" Id ="qut7">
+<b>Which tree can you carry with your hands?</b><br>
+<label><input type="radio" name=""  value ="" >coconut tree</label> <br>
+<label><input type ="radio" name="" value ="" Id ="cor7">palm tree</label><br>
+<label><input type ="radio" name="" value ="">flower</label> <br>
+<label><input type ="radio" name="" value ="" >pepper</label> <br>
+<button onclick ="randomize()" class ="subgone" name ="" Id ="sub7">Submit </button>
+</form>
+
+<button Id ="insBut">Instructions</button>
+<p Id ="ins" class ="ins">
+You have 7 questions. You would win<br>
+free data for each one answer correctly<br>
+But you can only collect the data when<br>
+you have up to 250mb,1gb and 2gb. When<br>
+you've reach these thresholds the button <br>
+would be activated and then you can click to<br>
+collect your free data. Once you've clicked <br>
+you would get your data within 12 hours
+</p>
+
+<form class ="remain" Id = "get">
+<input type="button" value="Collect 250mb">
+</form>
+
+<form class ="call1gb" Id = "call1gb">
+<input type ="button" value="Collect 1gb">
+</form>
+
+<form class ="call2gb" Id = "call2gb">
+<input type ="button" value="Collect 2gb">
+</form>
+
+<script type="text/javascript" src="/storage/emulated/0/Web/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript">
+var submit = document.getElementById("submit");
+var get = document.getElementById("get");
+var next = document.getElementById("qut1"); 
+submit.addEventListener("click", function (){
+document.getElementById("lot").style.display="none";
+if (document.getElementById("correct").checked){
+alert ("Well done! You have gotten the answer correctly.");
+next.className = "";
+} else {
+alert ("Sorry, you are incorrect.");
+}
+});
+
+
+function disabled(){
+if (submit.className === "disabled") {
+    submit.className  = "";
+} else {
+    submit.className  = "disabled";
+}
+};
+
+var sub1 = document.getElementById("sub1");
+var sub2 = document.getElementById("sub2");
+var sub3 = document.getElementById("sub3");
+var sub4 = document.getElementById("sub4");
+var sub5 = document.getElementById("sub5");
+var sub6 = document.getElementById("sub6");
+var sub7 = document.getElementById("sub7");
+
+
+
+var qut1 = document.getElementById("qut1");
+var qut2 = document.getElementById("qut2");
+var qut3 = document.getElementById("qut3");
+var qut4 = document.getElementById("qut4");
+var qut5 = document.getElementById("qut5");
+var qut6 = document.getElementById("qut6");
+var qut7 = document.getElementById("qut7");
+
+
+sub1.addEventListener("click", function (){
+document.getElementById("qut1").style.display="none";
+if (document.getElementById("cor1").checked){
+alert("Correct!");
+qut2.className= "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub2.addEventListener("click", function (){
+document.getElementById("qut2").style.display="none";
+if (document.getElementById("cor2").checked){
+alert("Correct!");
+qut3.className= "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub3.addEventListener("click", function (){
+document.getElementById("qut3").style.display="none";
+if (document.getElementById("cor3").checked){
+alert("Correct!");
+qut4.className= "";
+get.className = "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub4.addEventListener("click", function (){
+document.getElementById("qut4").style.display="none";
+if (document.getElementById("cor4").checked){
+alert("Correct!");
+qut5.className= "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub5.addEventListener("click", function (){
+document.getElementById("qut5").style.display="none";
+if (document.getElementById("cor5").checked){
+alert("Correct!");
+qut6.className= "";
+document.getElementById l("call1gb").className = "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub6.addEventListener("click", function (){
+document.getElementById("qut6").style.display="none";
+if (document.getElementById("cor6").checked){
+alert("Correct!");
+qut7.className= "";
+} else { alert("Sorry, you are incorrect.");
+}
+});
+
+sub7.addEventListener("click", function(){
+if (document.getElementById("cor7").checked){
+alert("Congratulation, you have won free 2gb MTN data");
+document.getElementById("call2gb").className = "";
+} else {alert("Incorrect, but at least you have gotten this far."); 
+}
+}); 
+
+
+var insBut = document.getElementById("insBut");
+insBut.addEventListener("click", function(){
+document.getElementById("ins").className = "";
+});
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
